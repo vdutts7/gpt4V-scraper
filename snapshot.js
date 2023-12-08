@@ -4,7 +4,7 @@ puppeteer.use(StealthPlugin());
 
 
 const url = process.argv[2];
-// const url =  process.argv[2] || "https://tiktok.fandom.com/wiki/Charli_D%27Amelio";
+// const url = "https://en.wikipedia.org/wiki/Devious_lick#:~:text=A%20devious%20lick%20(also%20known,their%20school%2C%20typically%20from%20a";
 const timeout = 6000; //adjust to liking
 
 (async () => {
