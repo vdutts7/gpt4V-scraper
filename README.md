@@ -47,13 +47,20 @@
 ### Part 1: Screenshot + Scrape
 - Run `npm i` to install dependencies (Puppetteer libraries, see `package.json` for details).
 - Copy `.env.template` and rename this new file `.env` . Then add your `OPENAI_API_KEY`and save the file. Run `source .env` properly mount this into the environment.
-- Run `node snapshot.js "<URL>"` . Insert any URL in the place of `<URL>`. 
+- Set up browser confguration to allow for websites with paywalls. Chrome Canary can be installed and then referenced in `snapshot.js`:
+```
+executablePath: '/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary',
+userDataDir: '/Users/vdutts7/Library/Application\ Support/Google/Chrome\ Canary/Default',
+``` 
+Replace paths with respective locations specific to your device.
+
+- Run `node snapshot.js "<URL>"` . Insert any URL in place of `<URL>`. 
 
 Ex:
 ```
 node snapshot.js "https://en.wikipedia.org/wiki/Devious_lick"
 ```
-Wait for a few sec (adjust the line `const timeout = 6000;`  if too slow), and a `snapshot.jpg` will magically appear in your project directory.
+Wait for few seconds (adjust `const timeout = 6000;`  if too slow), and  `snapshot.jpg` will magically appear in root directory of project:
 
 <div align="center">
     <i>snapshot.jpg</i>
@@ -61,8 +68,9 @@ Wait for a few sec (adjust the line `const timeout = 6000;`  if too slow), and a
 </div>
 
 
-### Part 2: Image to Text Conversion
+### Part 2: Image to Text Conversion 
 
+This next part is better than a lot of OCR software on the market right now, in my opinion.
 
 ### Part 3: Image to Text Conversion
 
