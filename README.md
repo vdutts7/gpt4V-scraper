@@ -53,7 +53,7 @@ Ex:
 ```
 node snapshot.js "https://en.wikipedia.org/wiki/Devious_lick"
 ```
-Wait for a few sec (adjust timeout period if too slow), and a `snapshot.jpg` will magically appear in your project directory.
+Wait for a few sec (adjust the line `const timeout = 6000;`  if too slow), and a `snapshot.jpg` will magically appear in your project directory.
 
 <div align="center">
     <i>snapshot.jpg</i>
