@@ -87,5 +87,7 @@ Wait for a few sec (adjust timeout period if too slow), and a `snapshot.jpg` wil
 [puppeteer-url]: https://pptr.dev/
 [email]: https://img.shields.io/badge/me@vd7.io-FFCA28?style=for-the-badge&logo=Gmail&logoColor=00bbff&color=black
 [email-url]: #
+[github]: https://img.shields.io/badge/💻Github-000000?style=for-the-badge
+[github-url]: https://github.com/vdutts7/gpt4v-scraper
 [twitter]: https://img.shields.io/badge/Twitter-FFCA28?style=for-the-badge&logo=Twitter&logoColor=00bbff&color=black
 [twitter-url]: https://twitter.com/vdutts7/
