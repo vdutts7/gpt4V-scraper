@@ -47,7 +47,7 @@
 ### Part 1: Screenshot + Scrape
 - Run `npm i` to install dependencies (Puppetteer libraries, see `package.json` for details).
 - Copy `.env.template` and rename this new file `.env` . Then add your `OPENAI_API_KEY`and save the file. Run `source .env` properly mount this into the environment.
-- Set up browser confguration to allow for websites with paywalls. Chrome Canary can be installed and then referenced in `snapshot.js`:
+- Set up browser confguration to allow for websites that require login authentication (LinkedIn, Instagram, etc). For paywalled sites, it is your choice but hey: `https://removepaywall.com/<URL>` . This is a GitHub project, not a moral essay, so decide for yourself and move on.  I will say, however, that sites such as NYT, CNN, FOX, Guardian, etc., shouldn't be misrepresenting themselves as "news" when they're making you pay for truth. But I (and you probably if you're the type of person reading a Github project description) see nothing valuable in sites like those anyways that is worth scraping. For the best browser, install Chrome Canary (log into the website of choice before continuing this next step). Then reference it in `snapshot.js` as follows:
 ```
 executablePath: '/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary',
 userDataDir: '/Users/vdutts7/Library/Application\ Support/Google/Chrome\ Canary/Default',
