@@ -72,6 +72,24 @@ Wait for few seconds (adjust `const timeout = 6000;`  if too slow), and  `snapsh
 
 This next part is better than a lot of OCR software on the market right now, in my opinion.
 
+Edit the following lines in `python gpt4v_scraper.py`, replacing with your own website URL and then a system prompt (command to the GPT-4V API) about what to scrape for. See my example:
+
+```
+# Running the function w/ a example website + prompt
+result = web_capture_and_extract("https://vd7.io/experience", "Extract this dude's Experience info")
+print(result)
+```
+You should see two things happen:
+- `snapshot.jpg` will be the screenshot of the scraped site
+- the console will display the text in the `snapshot.jpg` with additional context and answers to your prompt input
+
+<div align="center">
+    <i>console output</i>
+    <img src="https://res.cloudinary.com/dnz16usmk/image/upload/f_auto,q_auto/v1/vd7-website/gpt4v_scraper-consolelog"   />
+</div>
+
+
+
 ### Part 3: Image to Text Conversion
 
 
