@@ -9,6 +9,7 @@
     "author": "vdutts7",
     "license": "ISC",
     "dependencies": {
+        "dotenv": "^16.3.1",
         "openai": "^4.20.1",
         "puppeteer": "^21.5.2",
         "puppeteer-extra": "^3.3.6",

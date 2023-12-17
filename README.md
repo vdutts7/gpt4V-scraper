@@ -47,7 +47,7 @@
 ### Part 1: Screenshot + Scrape
 - Run `npm i` to install dependencies (Puppetteer libraries, see `package.json` for details).
 - Copy `.env.template` and rename this new file `.env` . Then add your `OPENAI_API_KEY`and save the file. Run `source .env` properly mount this into the environment.
-- Set up browser confguration to allow for websites that require login authentication (LinkedIn, Instagram, etc). For paywalled sites, it is your choice but hey: `https://removepaywall.com/<URL>` . This is a GitHub project, not a moral essay, so decide for yourself and move on.  I will say, however, that sites such as NYT, CNN, FOX, Guardian, etc., shouldn't be misrepresenting themselves as "news" when they're making you pay for truth. But I (and you probably if you're the type of person reading a Github project description) see nothing valuable in sites like those anyways that is worth scraping. For the best browser, install Chrome Canary (log into the website of choice before continuing this next step). Then reference it in `snapshot.js` as follows:
+- Set up browser confguration to allow for websites that require login authentication (LinkedIn, Instagram, etc). Make sure you log in ahead of time, that way your browser agent can access content without problems. For paywalled sites, it is your choice but hey: `https://removepaywall.com/<URL>` . This is a GitHub project, not a moral essay, so decide for yourself and move on.  I will say, however, that sites such as NYT, CNN, FOX, Guardian, etc., shouldn't be misrepresenting themselves as "news" when they're making you pay for truth. But I (and you probably if you're the type of person reading a Github project description) see nothing valuable in sites like those anyways that is worth scraping. For the best browser, install Chrome Canary (log into the website of choice before continuing this next step). Then reference it in `snapshot.js` as follows:
 ```
 executablePath: '/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary',
 userDataDir: '/Users/vdutts7/Library/Application\ Support/Google/Chrome\ Canary/Default',
@@ -70,7 +70,7 @@ Wait for few seconds (adjust `const timeout = 6000;`  if too slow), and  `snapsh
 
 ### Part 2: Image to Text Conversion 
 
-This next part is better than a lot of OCR software on the market right now, in my opinion.
+This next part is better than a lot of OCR software for common tasks- in my opinion.
 
 Edit the following lines in `python gpt4v_scraper.py`, replacing with your own website URL and then a system prompt (command to the GPT-4V API) about what to scrape for. See my example:
 
@@ -92,6 +92,65 @@ You should see two things happen:
 
 ### Part 3: Image to Text Conversion
 
+Run `node web_agent.js` and begin chatting with the GPT-4V Web Agent in the console:
+```
+🔥 GPT-4V Web Agent: Sup, ask me something!
+You: 
+```
+For example:
+
+<div align="center">
+    <i>chat with web agent</i>
+    <img src="https://res.cloudinary.com/dnz16usmk/image/upload/f_auto,q_auto/v1/vd7-website/gpt4v_scraper-webagent"   />
+</div>
+
+which matches the trending cryptos list on CoinMarketCap:
+
+
+<div align="center">
+    <i>via CoinMarketCap</i>
+    <img src="https://res.cloudinary.com/dnz16usmk/image/upload/f_auto,q_auto/v1/vd7-website/gpt4v_scraper-coinmarketcap"   />
+</div>
+
+Here's the extended convo 😂 :
+```
+(base) vdutts7@Vacbook-Vro gpt4V-scraper % node web_agent.js 
+🔥 GPT-4V Web Agent: Sup, ask me something!
+You: gimme the top 10 trending cryptos right now
+
+GPT: {"url": "https://coinmarketcap.com/trending-cryptocurrencies/"}
+Crawling 🐜  https://coinmarketcap.com/trending-cryptocurrencies/
+GPT: The top 10 trending cryptocurrencies on CoinMarketCap right now are:
+
+1. Bonk (BONK)
+2. Loopring (LRC)
+3. Internet Computer (ICP)
+4. Cirus Foundation (CIRUS)
+5. Coq Inc (COQ)
+6. Shiba Inu (SHIB)
+7. SATS (100SATs)
+8. Worldcoin (WLD)
+9. r a t s (Ordinals) (rats)
+10. Bitcoin (BTC)
+
+Please note that cryptocurrency markets are highly volatile, and the trending list can change frequently.
+You: which ones looks smexy
+
+GPT: It's important to clarify that the term "smexy," which is often a colloquial or slang term for "smart and sexy," doesn't really apply to cryptocurrencies. Cryptocurrencies are digital or virtual currencies and don't possess physical attributes that can be defined as attractive or not in the way that term suggests.
+
+However, if you're asking about which cryptocurrencies on the list are potentially interesting or have seen significant attention, people often consider a few factors such as market performance, innovation, and the presence of a strong community or technological potential behind the cryptocurrency.
+
+If we look at the trend data provided and the percentage changes in price over the past 7 days from the snapshot:
+
+1. Bonk (BONK) has seen a remarkable 613.52% increase over 7 days.
+2. Cirus Foundation (CIRUS) has grown by 107.72% over the same time frame.
+3. Worldcoin (WLD) has appreciated by 105.97% over the last 7 days.
+
+These significant increases might signal market excitement around these tokens, suggesting that some traders may find these trends to be metaphorically "smexy."
+
+However, this should not be considered investment advice. Cryptocurrency investments can be highly speculative and carry a high level of risk. It's important to conduct thorough research or consult a financial advisor before making investment decisions.
+You: 
+```
 
 ## 🔧Tools Used
 
