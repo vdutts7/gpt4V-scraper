@@ -90,9 +90,11 @@ You should see two things happen:
 
 
 
-### Part 3: Image to Text Conversion
+### Part 3: "AutoGPT" style prompting + Bing search 
 
-Run `node web_agent.js` and begin chatting with the GPT-4V Web Agent in the console:
+Chat with GPT-4V Web Agent in realtime to guide it across Bing search.
+
+Run `node web_agent.js` :
 ```
 🔥 GPT-4V Web Agent: Sup, ask me something!
 You: 
