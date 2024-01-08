@@ -37,7 +37,7 @@
 
 ## 📝About
 
-- Automated web scraping tool for capturing full-page screenshots.
+- Automated web scraping tool which functions by capturing full-page screenshots (vs traditional crawling over html content).
 - Utilizes Puppeteer with a stealth plugin to avoid detection by anti-bot mechanisms.
 - Designed for efficiency with customizable timeout settings.
 
