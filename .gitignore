@@ -1,3 +1,4 @@
 node_modules/
 snapshot.jpg
 .env
+myenv/

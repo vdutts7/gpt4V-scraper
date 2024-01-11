@@ -72,6 +72,18 @@ Wait for few seconds (adjust `const timeout = 6000;`  if too slow), and  `snapsh
 
 This next part is better than a lot of OCR software for common tasks- in my opinion.
 
+Set up Python environment and install packages:
+```
+python3 -m venv myenv
+source myenv/bin/activate
+```
+
+```
+pip install -r requirements.txt
+```
+
+
+
 Edit the following lines in `gpt4v_scraper.py`, replacing with your own website URL and then a system prompt (command to the GPT-4V API) about what to scrape for. See my example:
 
 ```
