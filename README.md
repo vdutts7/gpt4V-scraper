@@ -47,7 +47,7 @@
 ### Part 1: Screenshot + Scrape
 - Run `npm i` to install dependencies (Puppetteer libraries, see `package.json` for details).
 - Copy `.env.template` and rename this new file `.env` . Then add your `OPENAI_API_KEY`and save the file. Run `source .env` properly mount this into the environment.
-- Set up browser confguration to allow for websites that require login authentication (LinkedIn, Instagram, etc). Make sure you log in ahead of time, that way your browser agent can access content without problems. For paywalled sites, it is your choice but hey: `https://removepaywall.com/<URL>` . This is a GitHub project, not a moral essay, so decide for yourself and move on.  I will say, however, that sites such as NYT, CNN, FOX, Guardian, etc., shouldn't be misrepresenting themselves as "news" when they're making you pay for truth. But I (and you probably if you're the type of person reading a Github project description) see nothing valuable in sites like those anyways that is worth scraping. For the best browser, install Chrome Canary (log into the website of choice before continuing this next step). Then reference it in `snapshot.js` as follows:
+- Set up browser confguration to allow for websites that require login authentication (LinkedIn, Instagram, etc). Make sure you log in ahead of time, that way your browser agent can access content without problems. For paywalled sites, it is your choice but hey: `https://removepaywall.com/<URL>` . This is a GitHub project, not a moral essay, so decide for yourself and move on.  I will say, however, that sites such as NYT, CNN, FOX, Guardian, etc., shouldn't be misrepresenting themselves as "news" when they're making you pay for truth. But I (and you probably if you're the type of person reading a GitHub project description) see nothing valuable in sites like those anyways that is worth scraping. For the best browser, install Chrome Canary (log into the website of choice before continuing this next step). Then reference it in `snapshot.js` as follows:
 
 <details>
 
@@ -88,9 +88,13 @@ userDataDir: '/home/<USERNAME>/.config/google-chrome',
 ``` 
 </details>
 
-Replace `<USERNAME>` with your system username.
+Reference:
+- `executablePath` is the full pathname of your desktop Chrome app
+- `userDataDir` is the specific directory where Puppeteer stores user-specific data like cookies and local storage. Useful for maintaining independent browser sessions with separate user data. Ensures clean slate for each session without previous user data. Also enables concurrent automation of multiple browser sessions. Tldr; it maximizes user control and flexibility.
+- Can use Chrome or Chrome Canary, substitute throughout as needed.
+- Replace `<USERNAME>` with your system username. 
+-Tip: Depending on what terminal you are running from, there may be escape characters messing things up, so try replacing `/` with `\\`
 
-__ paths with respective locations specific to your device.
 
 - Run `node snapshot.js "<URL>"` . Insert any URL in place of `<URL>`. 
 
