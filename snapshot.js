@@ -8,6 +8,8 @@ const url = process.argv[2];
 const timeout = 6000; //adjust to liking
 
 (async () => {
+
+    // See README for Windows/Linux instructions
     const browser = await puppeteer.launch( {
         headless: "false",
         executablePath: '/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary',

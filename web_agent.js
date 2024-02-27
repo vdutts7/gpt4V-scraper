@@ -132,7 +132,7 @@ async function waitForEvent(page, event) {
 
 (async () => {
 
-
+    // See README for Windows/Linux instructions
     const browser = await puppeteer.launch( {
         headless: "false",
         executablePath: '/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary',
