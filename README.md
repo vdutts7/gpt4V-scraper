@@ -15,29 +15,15 @@
 
 [![Github][github]][github-url]
 
-<div style={{ display: "flex", alignItems: "center" }}>
-<span style={{ marginRight: "10px", fontSize: "larger" }}>
-    {" "}
-    →
-</span>
-<a href="https://www.digitalocean.com/?refcode=2aa0ec7cfd0e&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge">
-    <img
-    src="https://res.cloudinary.com/dnz16usmk/image/upload/v1709301461/digitalocean-referral.png"
-    width={160}
-    />
-</a>
+
 </div>
 
-<img src="https://res.cloudinary.com/dnz16usmk/image/upload/f_auto,q_auto/v1/vd7-website/gpt4v-scraper"   />
-
- </div>
-
-<br/>
 
 
 ## Table of Contents
 
   <ol>
+    <a href="#200-usd-free-digitalocean">💸 $200 FREE cloud credits (DigitalOcean) </a><br/>
     <a href="#about">📝 About</a><br/>
     <a href="#how-to-build">💻 How to build</a><br/>
     <a href="#tools-used">🔧 Tools used</a>
@@ -47,6 +33,21 @@
   </ol>
 
 <br/>
+
+## 💸$200 FREE cloud credits (DigitalOcean)
+
+<div style="display: flex; align-items: center; justify-content: center; width: 350px;"> 
+    <div style="align-items: right; justify-content: right">
+        <i>FREE</i> $200 credit (deploy anything) →
+    </div>
+    <a href="https://www.digitalocean.com/?refcode=2aa0ec7cfd0e&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge">
+        <img src="https://res.cloudinary.com/dnz16usmk/image/upload/v1709301461/digitalocean-referral.png"
+            width="180"
+        />
+    </a>
+</div>
+
+
 
 ## 📝About
 
