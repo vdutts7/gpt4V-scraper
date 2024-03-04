@@ -15,6 +15,19 @@
 
 [![Github][github]][github-url]
 
+<div style={{ display: "flex", alignItems: "center" }}>
+<span style={{ marginRight: "10px", fontSize: "larger" }}>
+    {" "}
+    →
+</span>
+<a href="https://www.digitalocean.com/?refcode=2aa0ec7cfd0e&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge">
+    <img
+    src="https://res.cloudinary.com/dnz16usmk/image/upload/v1709301461/digitalocean-referral.png"
+    width={160}
+    />
+</a>
+</div>
+
 <img src="https://res.cloudinary.com/dnz16usmk/image/upload/f_auto,q_auto/v1/vd7-website/gpt4v-scraper"   />
 
  </div>
