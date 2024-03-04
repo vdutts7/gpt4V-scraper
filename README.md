@@ -23,7 +23,7 @@
 ## Table of Contents
 
   <ol>
-    <a href="#200-usd-free-digitalocean">💸 $200 FREE cloud credits (DigitalOcean) </a><br/>
+    <a href="#FREE-200-USD-cloud-credits">💸 FREE 200 USD cloud credits</a><br/>
     <a href="#about">📝 About</a><br/>
     <a href="#how-to-build">💻 How to build</a><br/>
     <a href="#tools-used">🔧 Tools used</a>
@@ -34,15 +34,14 @@
 
 <br/>
 
-## 💸$200 FREE cloud credits (DigitalOcean)
+## 💸FREE 200 USD cloud credits
 
-<div style="display: flex; align-items: center; justify-content: center; width: 350px;"> 
-    <div style="align-items: right; justify-content: right">
-        <i>FREE</i> $200 credit (deploy anything) →
-    </div>
+Click the banner to activate $200 free personal cloud credits on DigitalOcean (deploy anything).
+
+<div style="display: flex; align-items: center; justify-content: center; width: 400px;"> 
     <a href="https://www.digitalocean.com/?refcode=2aa0ec7cfd0e&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge">
         <img src="https://res.cloudinary.com/dnz16usmk/image/upload/v1709301461/digitalocean-referral.png"
-            width="180"
+            width="150"
         />
     </a>
 </div>
@@ -56,7 +55,7 @@
 - Designed for efficiency with customizable timeout settings.
 
 
-## 💻 How to build
+## 💻How to build
 
 ### Part 1: Screenshot + Scrape
 - Run `npm i` to install dependencies (Puppetteer libraries, see `package.json` for details).
