@@ -1,14 +1,14 @@
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/vdutts7/webp/refs/heads/main/originals/chatgpt.webp" alt="logo" width="80" height="80" />
-<img src="https://raw.githubusercontent.com/vdutts7/webp/refs/heads/main/touchid.webp" alt="logo" width="80" height="80" />
-<img src="https://res.cloudinary.com/ddyc1es5v/image/upload/v1768054075/gh-repos/applock-macos/signal.png" alt="logo" width="80" height="80"/>
+<img src="https://raw.githubusercontent.com/vdutts7/webp/refs/heads/main/originals/chrome-canary.webp" alt="logo" width="80" height="80" />
+<img src="https://raw.githubusercontent.com/vdutts7/webp/refs/heads/main/originals/puppeteer.webp" alt="logo" width="80" height="80" />
 
   <h1 align="center">
-        GPT-4V Web Agent
+        GPT-4v Web Agent
     </h1>
     <p align="center"> 
-        <i><b>AI agent that can SEE 👁️, control, navigate, & do stuff for you on your browser.</b></i>
+        <i><b>AI agent that can SEE 👁️, control, navigate, & do stuff for you on your browser</b></i>
         <br /> 
     </p>
 
