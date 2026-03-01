@@ -1,9 +1,8 @@
 <div align="center">
 
-
-  <img src="https://res.cloudinary.com/dnz16usmk/image/upload/f_auto,q_auto/v1/vd7-website/gpt4v-logo" alt="Logo" width="80" height="80" />
-  <img src="https://res.cloudinary.com/dnz16usmk/image/upload/f_auto,q_auto/v1/vd7-website/wikipedia-logo" alt="Logo" width="67" height="67"/>
-   <img src="https://res.cloudinary.com/dnz16usmk/image/upload/f_auto,q_auto/v1/vd7-website/linkedin-logo" alt="Logo" width="67" height="67"/>
+<img src="https://raw.githubusercontent.com/vdutts7/webp/refs/heads/main/originals/chatgpt.webp" alt="logo" width="80" height="80" />
+<img src="https://raw.githubusercontent.com/vdutts7/webp/refs/heads/main/touchid.webp" alt="logo" width="80" height="80" />
+<img src="https://res.cloudinary.com/ddyc1es5v/image/upload/v1768054075/gh-repos/applock-macos/signal.png" alt="logo" width="80" height="80"/>
 
   <h1 align="center">
         GPT-4V Web Agent
