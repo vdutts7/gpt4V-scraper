@@ -39,7 +39,7 @@ Click the banner to activate $200 free personal cloud credits on DigitalOcean (d
 
 <div style="display: flex; align-items: center; justify-content: center; width: 400px;"> 
     <a href="https://www.digitalocean.com/?refcode=2aa0ec7cfd0e&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge">
-        <img src="https://res.cloudinary.com/dnz16usmk/image/upload/v1709301461/digitalocean-referral.png"
+        <img src="https://res.cloudinary.com/ddyc1es5v/image/upload/v1772395492/digitalocean-referral.png"
             width="150"
         />
     </a>
